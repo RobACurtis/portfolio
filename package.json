@@ -4,11 +4,20 @@
   "private": true,
   "description": "Portfolio Web Page",
   "scripts": {
+    "start": "NODE_ENV=production node .",
+    "dev": "NODE_ENV=development nodemon .",
+    "watch": "webpack --watch --stats=minimal --mode=development --devtool=source-map",
     "prepare": "husky install",
-  "build": "webpack",
-  "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-transform-react-jsx": "^7.19.0",
+    "babel-loader": "^9.1.0",
+    "connect-livereload": "^0.6.1",
+    "css-loader": "^6.7.1",
+    "error-overlay-webpack-plugin": "^1.1.0",
     "eslint": "^8.25.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-html": "^7.1.0",
@@ -20,12 +29,9 @@
     "stylelint": "^14.14.0",
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-config-standard": "^27.0.0",
-    "@babel/core": "^7.20.5",
-    "@babel/plugin-transform-react-jsx": "^7.19.0",
-    "babel-loader": "^9.1.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
-      },
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
