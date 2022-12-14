@@ -1,0 +1,19 @@
+.rc-container {
+  width: 80%;
+  margin: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  color: inherit;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#nav {
+  color: white;
+}
