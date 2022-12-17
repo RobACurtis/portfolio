@@ -1,6 +1,16 @@
+html {
+  scroll-padding-top: 8em;
+}
+
 .rc-container {
   width: 80%;
   margin: auto;
+}
+
+.name,
+.name:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -9,11 +19,57 @@
 }
 
 .nav-link:hover {
-  color: inherit;
-  text-decoration: underline;
+  color: white;
   font-style: italic;
 }
 
 #nav {
   color: white;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.tool-description {
+  margin-top: 1em;
+  font-style: arial;
+  font-weight: 600;
+}
+
+footer {
+  height: 20em;
+  padding-top: 0.1em;
+}
+
+.footer-title {
+  margin-top: 1em;
+  font-style: italic;
+}
+
+.contact-icon {
+  font-size: 1.8em;
+  margin: 0 1em;
+}
+
+.project-link,
+.project-link:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
 }

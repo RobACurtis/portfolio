@@ -2,37 +2,21 @@ import React from 'react';
 
 export default class About extends React.Component {
   render() {
-    const apps = [
-      {
-        name: 'surfr',
-        href: 'https://surfr.app'
-      },
-      {
-        name: 'weather-app',
-        href: 'github.com/weather-app'
-      },
-      {
-        name: 'liturgical-calendar',
-        href: 'github.com/robacurtis/liturgical-calendar'
-      }
-    ];
-
-    const appsList = apps.map((item, index) => {
-      return <li key={index}> <a href={item.href} target='_blank' rel="noreferrer">{item.name}</a></li>;
-    });
-
     return (
-      <div className="rc-container mt-5">
-        <div className="row">
-          <div className="col-12">
-            <h2>Hey! I am Rob, a Full Stack Web Developer!</h2>
-            <h5>Projects</h5>
-            <ul>
-              {appsList}
-            </ul>
+      <section id='about'>
+        <div className="rc-container">
+          <div className="row justify-content-between">
+            <div className="col-12 col-lg-6">
+              <h2>Hello! I am Rob,</h2>
+              <p> A Full Stack Software Engineer who has a passion for creating web
+                applications that will impact others in a positive way.</p>
+            </div>
+            <div className='col-12 text-center col-lg-5'>
+              <img src="images/Robert-Curtis.jpg" alt="Portrait" className='portrait' />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
